@@ -1,0 +1,45 @@
+<!doctype HTML>
+
+<html>
+<head>
+<link rel="stylesheet" href = "./CSS/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./CSS/index.css">
+<script src = "https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src = "./componets/form.js"></script>
+<script src = "./componets/toDoItem.js"></script>
+</head>
+
+<body>
+
+    <div class = "home">
+        <header>
+        <b>My To-Do List</b>
+        <p></p>
+        <todo-form @add = "addToDo">
+        </header>
+        </todo-form>
+
+        <todo-item v-for = "item in toDos" :item = "item" @remove="remove"></todo-item>
+    </div>
+<script>
+        var vue = new Vue({
+            el : ".home",
+            data:{
+                toDos:[]
+            },
+            methods : {
+                addToDo (value) {
+                    console.log(value)
+                    this.toDos.push(value)
+                },
+                remove(value) {
+                    const i = this.toDos.indexOf(value)
+                    this.toDos.splice(i, 1)
+                }
+            }
+        })
+</script>
+
+</body>
+
+</html>

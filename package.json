@@ -1,0 +1,19 @@
+{
+  "name": "tdl",
+  "version": "1.0.0",
+  "description": "Hi Mom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benacales/TDL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benacales/TDL/issues"
+  },
+  "homepage": "https://github.com/benacales/TDL#readme"
+}

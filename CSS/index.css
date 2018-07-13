@@ -1,0 +1,43 @@
+html {
+    background-color : #717A8B;
+    height : 100%;
+    width : 100%;
+}
+header {
+    background-color : blanchedalmond;
+    height : 100%;
+    width : 60%;
+    border : solid;
+    border-color : black;
+    border-width : 3px;
+    padding-top : -2em;
+    padding-bottom : 1em;
+    padding-left : 1.5em;
+    margin-bottom : 1em;
+}
+b {
+    font-size : 300%;
+    padding-bottom : 2em;
+}
+.form {
+    size : 200%;
+}
+.item {
+    background-color : blanchedalmond;
+    border : solid;
+    border-color : black;
+    border-width : 2px;
+    font-size : 25px;
+    
+    padding : 3px;
+    font-size : 160%;
+    font-family : Georgia, 'Times New Roman', Times, serif;
+    padding-left : 1em;
+}
+#theX {
+    cursor : pointer;
+    color : black;
+}
+#theX:hover {
+    color: red;
+}
